@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex">
+  <title>Not found | Starconomy</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin: 0; background: #0b0c0f; color: #f4f0e6; font: 400 1.05rem/1.6 "IBM Plex Sans", "Noto Sans TC", "Noto Sans JP", sans-serif; }
+    main { max-width: 40rem; margin: 0 auto; padding: 4.5rem 1.25rem 3rem; }
+    .brand { letter-spacing: 0.04em; color: #e6c98a; margin: 0 0 1.5rem; }
+    h1 { font-size: 1.4rem; font-weight: 500; margin: 0 0 1.5rem; }
+    h2 { font-size: 1.35rem; font-weight: 500; margin: 0 0 0.4rem; }
+    section { padding: 1rem 0; border-top: 1px solid rgba(244,240,230,0.16); }
+    a { color: #f4f0e6; }
+    a:focus-visible { outline: 2px solid #e6c98a; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="brand">Starconomy</p>
+    <h1 lang="en">404</h1>
+    <section lang="en"><h2>This page is not on the chart.</h2><p><a data-path="" href="https://starconomy.com/">Back to Starconomy</a></p></section><section lang="ja"><h2>このページは見当たりません。</h2><p><a data-path="ja/" href="https://starconomy.com/ja/">Starconomy に戻る</a></p></section><section lang="zh-Hant"><h2>找不到這個頁面。</h2><p><a data-path="zh/" href="https://starconomy.com/zh/">回到 Starconomy</a></p></section>
+  </main>
+  <script>
+    (function () {
+      var root = "/";
+      if (location.hostname.endsWith("github.io")) {
+        var seg = location.pathname.split("/").filter(Boolean)[0];
+        if (seg && seg !== "ja" && seg !== "zh") root = "/" + seg + "/";
+      }
+      document.querySelectorAll("a[data-path]").forEach(function (a) {
+        a.href = root + a.getAttribute("data-path");
+      });
+    })();
+  </script>
+</body>
+</html>
