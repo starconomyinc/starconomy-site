@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#0b0c0f">
   <meta name="format-detection" content="telephone=no">
   <meta name="referrer" content="no-referrer">
-  <title>Binary Star — two builds, one truth | Starconomy</title>
+  <title>Binary Star — Two builds. One truth. | Starconomy</title>
   <meta name="description" content="Starconomy rebuilds drone and radio firmware from audited source, twice, independently. One hash, an SBOM, a signed release, and a report a buyer can check. Taipei.">
   <link rel="canonical" href="https://starconomy.com/">
   <link rel="alternate" hreflang="en" href="https://starconomy.com/">
@@ -16,7 +16,7 @@
   <link rel="alternate" hreflang="x-default" href="https://starconomy.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Starconomy">
-  <meta property="og:title" content="Binary Star — two builds, one truth | Starconomy">
+  <meta property="og:title" content="Binary Star — Two builds. One truth. | Starconomy">
   <meta property="og:description" content="Starconomy rebuilds drone and radio firmware from audited source, twice, independently. One hash, an SBOM, a signed release, and a report a buyer can check. Taipei.">
   <meta property="og:url" content="https://starconomy.com/">
   <meta property="og:image" content="https://starconomy.com/img/og-en.png">
@@ -26,7 +26,7 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="ja_JP"><meta property="og:locale:alternate" content="zh_TW">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Binary Star — two builds, one truth | Starconomy">
+  <meta name="twitter:title" content="Binary Star — Two builds. One truth. | Starconomy">
   <meta name="twitter:description" content="Starconomy rebuilds drone and radio firmware from audited source, twice, independently. One hash, an SBOM, a signed release, and a report a buyer can check. Taipei.">
   <meta name="twitter:image" content="https://starconomy.com/img/og-en.png">
   <meta name="twitter:image:alt" content="Starconomy. Two builds. One truth. Firmware assurance from Taipei.">
@@ -135,7 +135,7 @@
         <div class="section-head">
           <p class="idx">01</p>
           <div>
-            <h2>Buyers are asked to trust a binary they cannot re-derive.</h2>
+            <h2>Buyers are asked to trust a binary they cannot rebuild themselves.</h2>
             <p class="intro">A procurement team in Tokyo, Brussels, or Washington can read the datasheet and still not know whether the firmware is what the source says it is. A hash the vendor supplies only shows that a file did not change on the way. It does not show that the file was built from the audited source, with the declared toolchain, and with nothing else in it.</p>
           </div>
         </div>
@@ -156,7 +156,7 @@
         </div>
         <div class="section-body">
           <ol class="timeline"><li><time datetime="2025-12">December 2025</time><p>The US FCC restricted foreign-produced unmanned aircraft systems and certain critical components.</p></li><li><time datetime="2026">2026</time><p>ITRI became a Green UAS assessor.</p></li><li><time datetime="2026-04">April 2026</time><p>Taiwan revised its drone cybersecurity test specification.</p></li><li><time datetime="2026-09">September 2026</time><p>Vulnerability-reporting obligations under the EU Cyber Resilience Act began.</p></li><li><time datetime="2027-12">December 2027</time><p>EU Cyber Resilience Act requirements that include an SBOM take effect.</p></li></ol>
-          <p class="closing">Makers who can hand a buyer a rebuild the buyer can check spend less of the sale explaining a PDF.</p>
+          <p class="closing">Makers who can hand a buyer a rebuild the buyer can check spend less of every sale defending a PDF.</p>
         </div>
       </div>
     </section>
@@ -171,7 +171,7 @@
           </div>
         </div>
         <div class="section-body">
-          <ol class="steps"><li><span class="sn">01</span><h3>Source</h3><p>The tree in scope, pinned dependencies, and a declared toolchain. Both builds follow this, and not anything one side adds later.</p></li><li><span class="sn">02</span><h3>Two independent builds</h3><p>The release is rebuilt on separate runners, with no shared cache. The second build is there so the first one is not grading itself.</p></li><li><span class="sn">03</span><h3>Identical hashes</h3><p>The outputs are compared byte for byte, bootloader included. If they differ, there is no release. Close enough is not a result.</p></li><li><span class="sn">04</span><h3>Signed report</h3><p>The buyer receives a report in English, Japanese, and Traditional Chinese: the matching hashes, the SBOM, the signatures, and the build provenance.</p></li></ol>
+          <ol class="steps"><li><span class="sn">01</span><h3>Source</h3><p>The tree in scope, pinned dependencies, and a pinned toolchain. Both builds follow this, and not anything one side adds later.</p></li><li><span class="sn">02</span><h3>Two independent builds</h3><p>The release is rebuilt on separate runners, with no shared cache. The second build is there so the first one is not grading itself.</p></li><li><span class="sn">03</span><h3>Identical hashes</h3><p>The outputs are compared byte for byte, bootloader included. If they differ, the build does not pass. Close enough is not a result.</p></li><li><span class="sn">04</span><h3>Signed report</h3><p>The buyer receives a report in English, Japanese, and Traditional Chinese: the matching hashes, the SBOM, the signatures, and the build provenance.</p></li></ol>
         </div>
       </div>
     </section>
@@ -181,12 +181,12 @@
         <div class="section-head">
           <p class="idx">04</p>
           <div>
-            <h2>What the buyer can hold</h2>
+            <h2>What the buyer receives</h2>
             <p class="intro">These are evidence of a rebuild. They are not a government certificate, and they are not a finding that a product is legally compliant.</p>
           </div>
         </div>
         <div class="section-body">
-          <ol class="deliverables"><li><span class="sn">01</span><div><h3>Bit-identical rebuild</h3><p>Two independent builds, one hash — or it is not treated as a release.</p></div></li><li><span class="sn">02</span><div><h3>SBOM</h3><p>A software bill of materials, delivered as SPDX and as CycloneDX.</p></div></li><li><span class="sn">03</span><div><h3>Signed release</h3><p>The artifact the hash names, with a signature a buyer can check.</p></div></li><li><span class="sn">04</span><div><h3>Build provenance</h3><p>Recorded as in-toto statements, aligned with SLSA.</p></div></li><li><span class="sn">05</span><div><h3>Trilingual report</h3><p>English, Japanese, and Traditional Chinese, written so a buyer can check it without a call.</p></div></li><li><span class="sn">06</span><div><h3>The next release</h3><p>On retainer, every new release is verified again. A pass on one version is not reused for the next.</p></div></li></ol>
+          <ol class="deliverables"><li><span class="sn">01</span><div><h3>Byte-for-byte rebuild</h3><p>Two independent builds, one hash — or the build does not pass.</p></div></li><li><span class="sn">02</span><div><h3>SBOM</h3><p>A software bill of materials, delivered as SPDX and as CycloneDX.</p></div></li><li><span class="sn">03</span><div><h3>Signed release</h3><p>The artifact the hash names, with a signature a buyer can check.</p></div></li><li><span class="sn">04</span><div><h3>Build provenance</h3><p>Recorded as in-toto statements, aligned with SLSA.</p></div></li><li><span class="sn">05</span><div><h3>Trilingual report</h3><p>English, Japanese, and Traditional Chinese, written so a buyer can check it without a call.</p></div></li><li><span class="sn">06</span><div><h3>The next release</h3><p>On retainer, every new release is verified again. A pass on one version is not reused for the next.</p></div></li></ol>
         </div>
       </div>
     </section>
@@ -201,7 +201,7 @@
           </div>
         </div>
         <div class="section-body">
-          <ol class="tiers"><li><span class="sn">01</span><h3>Readiness Scan</h3><p>A bounded look at whether this firmware can be rebuilt at all: toolchain, binary blobs, sources of non-determinism, and the claims a buyer would be unable to check today. The right first step when a sale depends on a question you have not answered yet.</p></li><li><span class="sn">02</span><h3>Build Assurance Audit</h3><p>The full Binary Star engagement. Source in an agreed scope, two independent rebuilds, an SBOM, a signed release, provenance, and the trilingual buyer report.</p></li><li><span class="sn">03</span><h3>Release Retainer</h3><p>Each later release verified again, by the same method. For a shipping cadence a one-time PDF cannot cover.</p></li><li><span class="sn">04</span><h3>Supplier Verification</h3><p class="tag">For buyers in Japan</p><p>An independent check of a supplier’s firmware claim, for a buyer in Japan who does not want the decision to rest on the supplier’s own build log.</p></li></ol><p class="section-cta"><a class="btn btn-primary" href="mailto:hello@starconomy.com?subject=Binary%20Star%20inquiry">Contact for pricing</a></p>
+          <ol class="tiers"><li><span class="sn">01</span><h3>Readiness Scan</h3><p>A bounded look at whether this firmware can be rebuilt at all: toolchain, binary blobs, sources of non-determinism, and the claims a buyer would be unable to check today. The right first step when a sale depends on a question you have not answered yet.</p></li><li><span class="sn">02</span><h3>Build Assurance Audit</h3><p>The full Binary Star engagement. Source in an agreed scope, two independent rebuilds, an SBOM, a signed release, provenance, and the trilingual buyer report.</p></li><li><span class="sn">03</span><h3>Release Retainer</h3><p>Each later release verified again, by the same method. For teams that ship faster than a one-time report can keep up with.</p></li><li><span class="sn">04</span><h3>Supplier Verification</h3><p class="tag">For buyers in Japan</p><p>An independent check of a supplier’s firmware claim, for a buyer in Japan who does not want the decision to rest on the supplier’s own build log.</p></li></ol><p class="section-cta"><a class="btn btn-primary" href="mailto:hello@starconomy.com?subject=Binary%20Star%20inquiry">Contact for pricing</a></p>
         </div>
       </div>
     </section>
@@ -213,13 +213,13 @@
           <div>
             <p class="eyebrow">Pilot · public artifacts only</p>
             <h2>What we have actually run</h2>
-            <p class="intro">We rebuilt ArduPilot Copter 4.7.3 for the CubeOrange target in an independent environment. The image matched the official release bit for bit, bootloader included.</p>
+            <p class="intro">We rebuilt ArduPilot Copter 4.7.3 for the CubeOrange target in an independent environment. The image matched the official release byte for byte, bootloader included.</p>
             <p class="coming">A full write-up is coming.</p>
           </div>
         </div>
         <div class="section-body">
-          <table class="spec"><tbody><tr><th scope="row">Target</th><td>ArduPilot Copter 4.7.3</td></tr><tr><th scope="row">Board target</th><td>CubeOrange</td></tr><tr><th scope="row">Result</th><td>Bit-identical to the official release</td></tr><tr><th scope="row">Scope of the match</th><td>Bootloader included</td></tr><tr><th scope="row">Write-up</th><td>Coming</td></tr><tr><th scope="row">What was compared</th><td>One independent rebuild, against the published official image</td></tr><tr><th scope="row">What an engagement is</th><td>Two independent rebuilds of the client’s source, then a report for the buyer</td></tr><tr><th scope="row">What this is not</th><td>Not a client engagement. Not a certification. Not an endorsement.</td></tr></tbody></table>
-          <p class="note">Do not read a customer, a partner, or a letter of assessment into this. Starconomy does not claim an endorsement from the projects named here. ArduPilot and Cube are trademarks of their respective owners, used only to identify the artifact that was rebuilt.</p>
+          <table class="spec"><tbody><tr><th scope="row">Target</th><td>ArduPilot Copter 4.7.3</td></tr><tr><th scope="row">Board target</th><td>CubeOrange</td></tr><tr><th scope="row">Result</th><td>Byte-for-byte identical to the official release</td></tr><tr><th scope="row">Scope of the match</th><td>Bootloader included</td></tr><tr><th scope="row">Write-up</th><td>Coming</td></tr><tr><th scope="row">What was compared</th><td>One independent rebuild, against the published official image</td></tr><tr><th scope="row">What an engagement is</th><td>Two independent rebuilds of the client’s source, then a report for the buyer</td></tr><tr><th scope="row">What this is not</th><td>Not a client engagement. Not a certification. Not an endorsement.</td></tr></tbody></table>
+          <p class="note">Do not read a customer, a partner, or any certification into this. Starconomy does not claim an endorsement from the projects named here. ArduPilot and Cube are trademarks of their respective owners, used only to identify the artifact that was rebuilt.</p>
         </div>
       </div>
     </section>
@@ -234,7 +234,7 @@
           </div>
         </div>
         <div class="section-body">
-          <dl class="facts"><div><dt>Legal name</dt><dd><span class="legal" lang="zh-Hant" translate="no">渼科星聯科技有限公司</span></dd></div><div><dt>English name</dt><dd>Starconomy INC.</dd></div><div><dt>Seat</dt><dd>Taipei, Taiwan</dd></div><div><dt>First service</dt><dd>Binary Star (<span lang="zh-Hant">雙星</span>)</dd></div></dl>
+          <dl class="facts"><div><dt>Legal name</dt><dd><span class="legal" lang="zh-Hant" translate="no">渼科星聯科技有限公司</span></dd></div><div><dt>English name</dt><dd>Starconomy INC.</dd></div><div><dt>Location</dt><dd>Taipei, Taiwan</dd></div><div><dt>First service</dt><dd>Binary Star (<span lang="zh-Hant">雙星</span>)</dd></div></dl>
         </div>
       </div>
     </section>
@@ -247,7 +247,7 @@
           <p class="intro">Say whether you are the maker or the buyer, and what the release is: board, firmware, and the market you are selling into.</p>
           <p><a class="email" href="mailto:hello@starconomy.com?subject=Binary%20Star%20inquiry">hello@starconomy.com</a></p>
           <p class="hero-meta"><span class="legal" lang="zh-Hant" translate="no">渼科星聯科技有限公司</span> <span aria-hidden="true">·</span> Taipei, Taiwan</p>
-          <p class="note">There is no form. A message to this address comes straight through.</p>
+          <p class="note">No form. Just email us directly.</p>
         </div>
       </div>
     </section>

@@ -39,8 +39,8 @@ MARK = """<svg class="mark" viewBox="0 0 36 36" aria-hidden="true" focusable="fa
 
 JSON_LD_DESC = {
     "en": "Firmware assurance. Two independent rebuilds, one hash a buyer can check.",
-    "ja": "ファームウェア保証。独立した二つの再ビルドと、買い手が照合できる一つのハッシュ。",
-    "zh": "韌體保證。兩次獨立重建，一組採購方可核對的雜湊。",
+    "ja": "ファームウェアのビルド検証。独立した二つの再ビルドと、調達側が照合できる一つのハッシュ。",
+    "zh": "韌體建置驗證。兩次獨立重建，一組採購方可核對的雜湊。",
 }
 
 
