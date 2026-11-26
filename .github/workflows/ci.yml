@@ -1,0 +1,21 @@
+name: Check site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install font tools
+        run: pip install fonttools brotli
+      - name: Regenerated HTML matches the commit
+        run: python3 src/build.py --check
+      - name: Pages, fonts, and copy
+        run: python3 scripts/check_site.py

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b0c0f">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="referrer" content="no-referrer">
+  <title>Binary Star — two builds, one truth | Starconomy</title>
+  <meta name="description" content="Starconomy rebuilds drone and radio firmware from audited source, twice, independently. One hash, an SBOM, a signed release, and a report a buyer can check. Taipei.">
+  <link rel="canonical" href="https://starconomy.com/">
+  <link rel="alternate" hreflang="en" href="https://starconomy.com/">
+  <link rel="alternate" hreflang="ja" href="https://starconomy.com/ja/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://starconomy.com/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://starconomy.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Starconomy">
+  <meta property="og:title" content="Binary Star — two builds, one truth | Starconomy">
+  <meta property="og:description" content="Starconomy rebuilds drone and radio firmware from audited source, twice, independently. One hash, an SBOM, a signed release, and a report a buyer can check. Taipei.">
+  <meta property="og:url" content="https://starconomy.com/">
+  <meta property="og:image" content="https://starconomy.com/img/og-en.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Starconomy. Two builds. One truth. Firmware assurance from Taipei.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ja_JP"><meta property="og:locale:alternate" content="zh_TW">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Binary Star — two builds, one truth | Starconomy">
+  <meta name="twitter:description" content="Starconomy rebuilds drone and radio firmware from audited source, twice, independently. One hash, an SBOM, a signed release, and a report a buyer can check. Taipei.">
+  <meta name="twitter:image" content="https://starconomy.com/img/og-en.png">
+  <meta name="twitter:image:alt" content="Starconomy. Two builds. One truth. Firmware assurance from Taipei.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="fonts/ibm-plex-sans-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ibm-plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://starconomy.com/#org","name":"Starconomy","legalName":"渼科星聯科技有限公司","alternateName":"Starconomy INC.","url":"https://starconomy.com/","email":"hello@starconomy.com","address":{"@type":"PostalAddress","addressLocality":"Taipei","addressCountry":"TW"},"description":"Firmware assurance. Two independent rebuilds, one hash a buyer can check.","knowsLanguage":["en","ja","zh-Hant"]},{"@type":"Service","name":"Binary Star","alternateName":"雙星","serviceType":"Firmware assurance","provider":{"@id":"https://starconomy.com/#org"},"areaServed":["TW","JP","EU","US"],"url":"https://starconomy.com/","description":"Starconomy rebuilds drone and radio firmware from audited source, twice, independently. One hash, an SBOM, a signed release, and a report a buyer can check. Taipei."}]}</script>
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-wrap">
+      <a class="brand" href="./">
+        <svg class="mark" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+  <circle cx="12.5" cy="21" r="5.4" fill="#f4f0e6"/>
+  <circle cx="25" cy="12.5" r="3.15" fill="#e6c98a"/>
+</svg>
+        <span class="brand-name">Starconomy</span>
+      </a>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#problem">Problem</a><a href="#method">Method</a><a href="#tiers">Tiers</a><a href="#proof">Proof</a><a href="#about">About</a>
+        <a class="nav-mail" href="mailto:hello@starconomy.com?subject=Binary%20Star%20inquiry">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <nav class="lang" aria-label="Languages"><a href="./" hreflang="en" lang="en" aria-current="page">EN</a><a href="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+        <a class="btn btn-small header-cta" href="mailto:hello@starconomy.com?subject=Binary%20Star%20inquiry">Contact</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-open-label="Menu" data-close-label="Close menu">
+          <span class="bars" aria-hidden="true"></span>
+          <span class="visually-hidden toggle-label">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="stars" aria-hidden="true">
+        <i style="left:8%;top:18%"></i><i style="left:18%;top:72%"></i><i style="left:27%;top:30%"></i>
+        <i style="left:36%;top:12%"></i><i style="left:48%;top:64%"></i><i style="left:61%;top:22%"></i>
+        <i style="left:70%;top:78%"></i><i style="left:78%;top:14%"></i><i style="left:88%;top:40%"></i>
+        <i style="left:93%;top:68%"></i><i class="bright" style="left:84%;top:10%"></i>
+        <i class="warm" style="left:89%;top:16%"></i>
+      </div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span lang="en">Binary Star</span> <span class="dot" aria-hidden="true">·</span> <span lang="zh-Hant">雙星</span></p>
+          <h1 id="hero-title">Two builds.<br>One truth.</h1>
+          <p class="lede">Firmware assurance for makers of drones and radio hardware, mainly in Taiwan, who sell into Japan, the European Union, and the United States. A release is rebuilt from the audited source in two environments with no shared cache. The buyer gets one hash, and a report they can check themselves.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#method">How Binary Star works</a>
+            <a class="btn btn-ghost" href="mailto:hello@starconomy.com?subject=Binary%20Star%20inquiry">Contact for pricing</a>
+          </div>
+          <p class="tagline">Verifiable by design.</p>
+          <p class="hero-meta"><span class="legal" lang="zh-Hant" translate="no">渼科星聯科技有限公司</span> <span aria-hidden="true">·</span> Taipei, Taiwan</p>
+        </div>
+        
+<figure class="schematic">
+  <figcaption>Method</figcaption>
+  <ol>
+    <li>
+      <span class="sn">01</span>
+      <div>
+        <p class="st">Source</p>
+        <p class="sd">Audited tree. Pinned toolchain.</p>
+      </div>
+    </li>
+    <li>
+      <span class="sn">02</span>
+      <div class="pair">
+        <div>
+          <p class="st">Build A</p>
+          <span class="bar" aria-hidden="true"></span>
+        </div>
+        <div>
+          <p class="st">Build B</p>
+          <span class="bar" aria-hidden="true"></span>
+        </div>
+        <p class="sd pair-note">Separate runners. No shared cache.</p>
+      </div>
+    </li>
+    <li>
+      <span class="sn">03</span>
+      <div>
+        <p class="st">Identical hash</p>
+        <p class="sd">Byte for byte. Bootloader included.</p>
+      </div>
+    </li>
+    <li>
+      <span class="sn">04</span>
+      <div>
+        <p class="st">Signed report</p>
+        <p class="sd">English, Japanese, Traditional Chinese.</p>
+      </div>
+    </li>
+  </ol>
+  <p class="schematic-note">A schematic of the method. Not a measured result.</p>
+</figure>
+      </div>
+    </section>
+
+    <section id="problem" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="idx">01</p>
+          <div>
+            <h2>Buyers are asked to trust a binary they cannot re-derive.</h2>
+            <p class="intro">A procurement team in Tokyo, Brussels, or Washington can read the datasheet and still not know whether the firmware is what the source says it is. A hash the vendor supplies only shows that a file did not change on the way. It does not show that the file was built from the audited source, with the declared toolchain, and with nothing else in it.</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <ol class="points"><li><span class="pn">01</span><div><h3>No tampering</h3><p>Nothing is introduced between the source that was reviewed and the bytes that ship.</p></div></li><li><span class="pn">02</span><div><h3>No untrusted code</h3><p>Binary blobs, unpinned dependencies, and a toolchain only one party can run are not evidence.</p></div></li><li><span class="pn">03</span><div><h3>No single point of build trust</h3><p>A hash from the maker’s own CI is the maker grading their own work.</p></div></li></ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="idx">02</p>
+          <div>
+            <h2>The bar for diligence is moving.</h2>
+            <p class="intro">These dates are why buyers are asking. They are not certifications Starconomy holds. Binary Star is not a filing with a regulator. This page is not legal advice.</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <ol class="timeline"><li><time datetime="2025-12">December 2025</time><p>The US FCC restricted foreign-produced unmanned aircraft systems and certain critical components.</p></li><li><time datetime="2026">2026</time><p>ITRI became a Green UAS assessor.</p></li><li><time datetime="2026-04">April 2026</time><p>Taiwan revised its drone cybersecurity test specification.</p></li><li><time datetime="2026-09">September 2026</time><p>Vulnerability-reporting obligations under the EU Cyber Resilience Act began.</p></li><li><time datetime="2027-12">December 2027</time><p>EU Cyber Resilience Act requirements that include an SBOM take effect.</p></li></ol>
+          <p class="closing">Makers who can hand a buyer a rebuild the buyer can check spend less of the sale explaining a PDF.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="method" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="idx">03</p>
+          <div>
+            <h2>How Binary Star works</h2>
+            <p class="intro">Same source. Two rebuilds that cannot see each other. One comparison.</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <ol class="steps"><li><span class="sn">01</span><h3>Source</h3><p>The tree in scope, pinned dependencies, and a declared toolchain. Both builds follow this, and not anything one side adds later.</p></li><li><span class="sn">02</span><h3>Two independent builds</h3><p>The release is rebuilt on separate runners, with no shared cache. The second build is there so the first one is not grading itself.</p></li><li><span class="sn">03</span><h3>Identical hashes</h3><p>The outputs are compared byte for byte, bootloader included. If they differ, there is no release. Close enough is not a result.</p></li><li><span class="sn">04</span><h3>Signed report</h3><p>The buyer receives a report in English, Japanese, and Traditional Chinese: the matching hashes, the SBOM, the signatures, and the build provenance.</p></li></ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="deliverables" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="idx">04</p>
+          <div>
+            <h2>What the buyer can hold</h2>
+            <p class="intro">These are evidence of a rebuild. They are not a government certificate, and they are not a finding that a product is legally compliant.</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <ol class="deliverables"><li><span class="sn">01</span><div><h3>Bit-identical rebuild</h3><p>Two independent builds, one hash — or it is not treated as a release.</p></div></li><li><span class="sn">02</span><div><h3>SBOM</h3><p>A software bill of materials, delivered as SPDX and as CycloneDX.</p></div></li><li><span class="sn">03</span><div><h3>Signed release</h3><p>The artifact the hash names, with a signature a buyer can check.</p></div></li><li><span class="sn">04</span><div><h3>Build provenance</h3><p>Recorded as in-toto statements, aligned with SLSA.</p></div></li><li><span class="sn">05</span><div><h3>Trilingual report</h3><p>English, Japanese, and Traditional Chinese, written so a buyer can check it without a call.</p></div></li><li><span class="sn">06</span><div><h3>The next release</h3><p>On retainer, every new release is verified again. A pass on one version is not reused for the next.</p></div></li></ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="tiers" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="idx">05</p>
+          <div>
+            <h2>How to engage</h2>
+            <p class="intro">We publish the scope, not a rate card. The fee follows the tree, the toolchain, and the buyer’s deadline.</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <ol class="tiers"><li><span class="sn">01</span><h3>Readiness Scan</h3><p>A bounded look at whether this firmware can be rebuilt at all: toolchain, binary blobs, sources of non-determinism, and the claims a buyer would be unable to check today. The right first step when a sale depends on a question you have not answered yet.</p></li><li><span class="sn">02</span><h3>Build Assurance Audit</h3><p>The full Binary Star engagement. Source in an agreed scope, two independent rebuilds, an SBOM, a signed release, provenance, and the trilingual buyer report.</p></li><li><span class="sn">03</span><h3>Release Retainer</h3><p>Each later release verified again, by the same method. For a shipping cadence a one-time PDF cannot cover.</p></li><li><span class="sn">04</span><h3>Supplier Verification</h3><p class="tag">For buyers in Japan</p><p>An independent check of a supplier’s firmware claim, for a buyer in Japan who does not want the decision to rest on the supplier’s own build log.</p></li></ol><p class="section-cta"><a class="btn btn-primary" href="mailto:hello@starconomy.com?subject=Binary%20Star%20inquiry">Contact for pricing</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proof" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="idx">06</p>
+          <div>
+            <p class="eyebrow">Pilot · public artifacts only</p>
+            <h2>What we have actually run</h2>
+            <p class="intro">We rebuilt ArduPilot Copter 4.7.3 for the CubeOrange target in an independent environment. The image matched the official release bit for bit, bootloader included.</p>
+            <p class="coming">A full write-up is coming.</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <table class="spec"><tbody><tr><th scope="row">Target</th><td>ArduPilot Copter 4.7.3</td></tr><tr><th scope="row">Board target</th><td>CubeOrange</td></tr><tr><th scope="row">Result</th><td>Bit-identical to the official release</td></tr><tr><th scope="row">Scope of the match</th><td>Bootloader included</td></tr><tr><th scope="row">Write-up</th><td>Coming</td></tr><tr><th scope="row">What was compared</th><td>One independent rebuild, against the published official image</td></tr><tr><th scope="row">What an engagement is</th><td>Two independent rebuilds of the client’s source, then a report for the buyer</td></tr><tr><th scope="row">What this is not</th><td>Not a client engagement. Not a certification. Not an endorsement.</td></tr></tbody></table>
+          <p class="note">Do not read a customer, a partner, or a letter of assessment into this. Starconomy does not claim an endorsement from the projects named here. ArduPilot and Cube are trademarks of their respective owners, used only to identify the artifact that was rebuilt.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="idx">07</p>
+          <div>
+            <h2>A fixed reference</h2>
+            <p>A star is the navigator’s fixed reference: the point that does not move, so a course can be reckoned from it. <span lang="zh-Hant">聯</span>, in the Chinese name, is the alliance — makers willing to be checked against the same evidence, and buyers who can rely on it.</p><p>Binary Star is our first service. The scope stays narrow on purpose. We reproduce a release, or we say that we could not.</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <dl class="facts"><div><dt>Legal name</dt><dd><span class="legal" lang="zh-Hant" translate="no">渼科星聯科技有限公司</span></dd></div><div><dt>English name</dt><dd>Starconomy INC.</dd></div><div><dt>Seat</dt><dd>Taipei, Taiwan</dd></div><div><dt>First service</dt><dd>Binary Star (<span lang="zh-Hant">雙星</span>)</dd></div></dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap contact-grid">
+        <p class="idx">08</p>
+        <div>
+          <h2>Contact for pricing</h2>
+          <p class="intro">Say whether you are the maker or the buyer, and what the release is: board, firmware, and the market you are selling into.</p>
+          <p><a class="email" href="mailto:hello@starconomy.com?subject=Binary%20Star%20inquiry">hello@starconomy.com</a></p>
+          <p class="hero-meta"><span class="legal" lang="zh-Hant" translate="no">渼科星聯科技有限公司</span> <span aria-hidden="true">·</span> Taipei, Taiwan</p>
+          <p class="note">There is no form. A message to this address comes straight through.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="brand-name">Starconomy</p>
+        <p class="legal-line"><span class="legal" lang="zh-Hant" translate="no">渼科星聯科技有限公司</span></p>
+        <p>Starconomy INC.</p>
+        <p>Taipei, Taiwan</p>
+      </div>
+      <nav class="footer-nav" aria-label="On this page">
+        <a href="#problem">Problem</a><a href="#why">Why now</a><a href="#method">Method</a><a href="#deliverables">Deliverables</a><a href="#tiers">Tiers</a><a href="#proof">Proof</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-meta">
+        <nav class="lang" aria-label="Languages"><a href="./" hreflang="en" lang="en" aria-current="page">EN</a><a href="ja/" hreflang="ja" lang="ja">日本語</a><a href="zh/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+        <p>© 2026 Starconomy INC.</p>
+        <p>This site sets no cookies and loads no third-party scripts.</p>
+        <p>ArduPilot and Cube are trademarks of their respective owners.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>

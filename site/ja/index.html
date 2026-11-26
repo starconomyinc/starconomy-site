@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b0c0f">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="referrer" content="no-referrer">
+  <title>Binary Star — 二つのビルド、ひとつの真実 | Starconomy</title>
+  <meta name="description" content="Starconomy は、監査済みのソースからドローンと無線機器のファームウェアを、独立した二つの環境でビルドし直します。一つのハッシュ、SBOM、署名付きリリース、買い手が照合できる報告書。台北。">
+  <link rel="canonical" href="https://starconomy.com/ja/">
+  <link rel="alternate" hreflang="en" href="https://starconomy.com/">
+  <link rel="alternate" hreflang="ja" href="https://starconomy.com/ja/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://starconomy.com/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://starconomy.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Starconomy">
+  <meta property="og:title" content="Binary Star — 二つのビルド、ひとつの真実 | Starconomy">
+  <meta property="og:description" content="Starconomy は、監査済みのソースからドローンと無線機器のファームウェアを、独立した二つの環境でビルドし直します。一つのハッシュ、SBOM、署名付きリリース、買い手が照合できる報告書。台北。">
+  <meta property="og:url" content="https://starconomy.com/ja/">
+  <meta property="og:image" content="https://starconomy.com/img/og-ja.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Starconomy。二つのビルド、ひとつの真実。台北からのファームウェア保証。">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="zh_TW">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Binary Star — 二つのビルド、ひとつの真実 | Starconomy">
+  <meta name="twitter:description" content="Starconomy は、監査済みのソースからドローンと無線機器のファームウェアを、独立した二つの環境でビルドし直します。一つのハッシュ、SBOM、署名付きリリース、買い手が照合できる報告書。台北。">
+  <meta name="twitter:image" content="https://starconomy.com/img/og-ja.png">
+  <meta name="twitter:image:alt" content="Starconomy。二つのビルド、ひとつの真実。台北からのファームウェア保証。">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="preload" href="../fonts/noto-sans-jp-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/noto-sans-jp-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../css/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://starconomy.com/#org","name":"Starconomy","legalName":"渼科星聯科技有限公司","alternateName":"Starconomy INC.","url":"https://starconomy.com/","email":"hello@starconomy.com","address":{"@type":"PostalAddress","addressLocality":"Taipei","addressCountry":"TW"},"description":"ファームウェア保証。独立した二つの再ビルドと、買い手が照合できる一つのハッシュ。","knowsLanguage":["en","ja","zh-Hant"]},{"@type":"Service","name":"Binary Star","alternateName":"雙星","serviceType":"Firmware assurance","provider":{"@id":"https://starconomy.com/#org"},"areaServed":["TW","JP","EU","US"],"url":"https://starconomy.com/ja/","description":"Starconomy は、監査済みのソースからドローンと無線機器のファームウェアを、独立した二つの環境でビルドし直します。一つのハッシュ、SBOM、署名付きリリース、買い手が照合できる報告書。台北。"}]}</script>
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#content">本文へ移動</a>
+  <header class="site-header">
+    <div class="wrap header-wrap">
+      <a class="brand" href="./">
+        <svg class="mark" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+  <circle cx="12.5" cy="21" r="5.4" fill="#f4f0e6"/>
+  <circle cx="25" cy="12.5" r="3.15" fill="#e6c98a"/>
+</svg>
+        <span class="brand-name">Starconomy</span>
+      </a>
+      <nav id="site-nav" class="site-nav" aria-label="主要">
+        <a href="#problem">課題</a><a href="#method">手順</a><a href="#tiers">依頼</a><a href="#proof">実証</a><a href="#about">会社</a>
+        <a class="nav-mail" href="mailto:hello@starconomy.com?subject=Binary%20Star%20%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">連絡</a>
+      </nav>
+      <div class="header-tools">
+        <nav class="lang" aria-label="言語"><a href="../" hreflang="en" lang="en">EN</a><a href="./" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="../zh/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+        <a class="btn btn-small header-cta" href="mailto:hello@starconomy.com?subject=Binary%20Star%20%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">連絡</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-open-label="メニュー" data-close-label="メニューを閉じる">
+          <span class="bars" aria-hidden="true"></span>
+          <span class="visually-hidden toggle-label">メニュー</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="stars" aria-hidden="true">
+        <i style="left:8%;top:18%"></i><i style="left:18%;top:72%"></i><i style="left:27%;top:30%"></i>
+        <i style="left:36%;top:12%"></i><i style="left:48%;top:64%"></i><i style="left:61%;top:22%"></i>
+        <i style="left:70%;top:78%"></i><i style="left:78%;top:14%"></i><i style="left:88%;top:40%"></i>
+        <i style="left:93%;top:68%"></i><i class="bright" style="left:84%;top:10%"></i>
+        <i class="warm" style="left:89%;top:16%"></i>
+      </div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span lang="ja">Binary Star</span> <span class="dot" aria-hidden="true">·</span> <span lang="ja">双星</span></p>
+          <h1 id="hero-title">二つのビルド、ひとつの真実。</h1>
+          <p class="lede">ドローンと無線機器のメーカー向けのファームウェア保証です。主な相手は、日本、欧州連合、米国へ販売する台湾のメーカーです。監査済みのソースから、キャッシュを共有しない二つの環境でリリースをビルドし直します。買い手に渡るのは、一つのハッシュと、自ら照合できる報告書です。</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#method">Binary Star の手順</a>
+            <a class="btn btn-ghost" href="mailto:hello@starconomy.com?subject=Binary%20Star%20%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">料金はお問い合わせください</a>
+          </div>
+          <p class="tagline">検証できる信頼を。</p>
+          <p class="hero-meta"><span class="legal" lang="zh-Hant" translate="no">渼科星聯科技有限公司</span> <span aria-hidden="true">·</span> 台湾・台北</p>
+        </div>
+        
+<figure class="schematic">
+  <figcaption>手順</figcaption>
+  <ol>
+    <li>
+      <span class="sn">01</span>
+      <div>
+        <p class="st">ソース</p>
+        <p class="sd">監査対象のツリー。宣言されたツールチェーン。</p>
+      </div>
+    </li>
+    <li>
+      <span class="sn">02</span>
+      <div class="pair">
+        <div>
+          <p class="st">ビルド A</p>
+          <span class="bar" aria-hidden="true"></span>
+        </div>
+        <div>
+          <p class="st">ビルド B</p>
+          <span class="bar" aria-hidden="true"></span>
+        </div>
+        <p class="sd pair-note">別々の実行環境。共有キャッシュなし。</p>
+      </div>
+    </li>
+    <li>
+      <span class="sn">03</span>
+      <div>
+        <p class="st">一致するハッシュ</p>
+        <p class="sd">バイト単位。ブートローダを含む。</p>
+      </div>
+    </li>
+    <li>
+      <span class="sn">04</span>
+      <div>
+        <p class="st">署名付き報告書</p>
+        <p class="sd">英語、日本語、繁体字中国語。</p>
+      </div>
+    </li>
+  </ol>
+  <p class="schematic-note">手順の模式図です。測定結果ではありません。</p>
+</figure>
+      </div>
+    </section>
+
+    <section id="problem" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="idx">01</p>
+          <div>
+            <h2>買い手は、自ら再現できないバイナリを信じるよう求められています。</h2>
+            <p class="intro">東京でも、ブリュッセルでも、ワシントンでも、調達の担当者はデータシートを読んだあとでさえ、ファームウェアがソースのとおりであるとは判断できません。供給者が示すハッシュは、ファイルが届くまでに変わっていないことしか示しません。監査したソースから、宣言どおりのツールチェーンで、ほかの何も混ぜずに作られたことは示しません。</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <ol class="points"><li><span class="pn">01</span><div><h3>改ざんがないこと</h3><p>確認したソースと、出荷されるバイト列とのあいだに、何も入っていない。</p></div></li><li><span class="pn">02</span><div><h3>信頼できないコードがないこと</h3><p>バイナリブロブ、版を固定していない依存関係、片方の環境でしか動かないツールチェーンは、証拠になりません。</p></div></li><li><span class="pn">03</span><div><h3>ビルドの信頼が一点に集まっていないこと</h3><p>作り手自身の CI が出したハッシュは、自分で採点した答案です。</p></div></li></ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="idx">02</p>
+          <div>
+            <h2>確認を求める水準が上がっています。</h2>
+            <p class="intro">これらの日付は、買い手が確認を求めている背景です。Starconomy が保有する認証ではなく、Binary Star は当局への届出の代わりになりません。このページは法律の助言ではありません。</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <ol class="timeline"><li><time datetime="2025-12">2025年12月</time><p>米国 FCC が、外国で製造された無人航空機システムと、一定の重要部品を制限しました。</p></li><li><time datetime="2026">2026年</time><p>ITRI（台湾・工業技術研究院）が Green UAS の審査機関になりました。</p></li><li><time datetime="2026-04">2026年4月</time><p>台湾のドローンに関するサイバーセキュリティ試験規格が改訂されました。</p></li><li><time datetime="2026-09">2026年9月</time><p>EU サイバーレジリエンス法の脆弱性報告義務が始まりました。</p></li><li><time datetime="2027-12">2027年12月</time><p>SBOM を含む、EU サイバーレジリエンス法の要件が適用されます。</p></li></ol>
+          <p class="closing">買い手が自分で照合できる再ビルドを渡せる作り手は、説明のための PDF に販売期間を使わずに済みます。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="method" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="idx">03</p>
+          <div>
+            <h2>Binary Star の手順</h2>
+            <p class="intro">同じソース。互いに見えない二つの再ビルド。一つの比較。</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <ol class="steps"><li><span class="sn">01</span><h3>ソース</h3><p>監査の対象となるツリー、版を固定した依存関係、宣言されたツールチェーン。両方のビルドは、これだけに従います。あとから片方だけが足すものは、含めません。</p></li><li><span class="sn">02</span><h3>独立した二つのビルド</h3><p>共有キャッシュのない、別々の実行環境でリリースをビルドし直します。二つ目のビルドは、一つ目が自分で自分を採点しないようにするためです。</p></li><li><span class="sn">03</span><h3>一致するハッシュ</h3><p>ブートローダを含めて、バイト単位で比べます。一致しなければ、リリースにはしません。「ほぼ同じ」という結果はありません。</p></li><li><span class="sn">04</span><h3>署名付き報告書</h3><p>買い手には、英語、日本語、繁体字中国語の報告書が渡ります。一致したハッシュ、SBOM、署名、ビルドの来歴です。通話なしで照合できる文章にします。</p></li></ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="deliverables" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="idx">04</p>
+          <div>
+            <h2>買い手が手元に持てるもの</h2>
+            <p class="intro">以下は再ビルドの証拠です。政府の証明書ではなく、製品が法令に適合しているという判定でもありません。</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <ol class="deliverables"><li><span class="sn">01</span><div><h3>ビット単位で一致する再ビルド</h3><p>独立した二つのビルド、一つのハッシュ。そうでなければ、リリースとして扱いません。</p></div></li><li><span class="sn">02</span><div><h3>SBOM</h3><p>ソフトウェア部品表を、SPDX と CycloneDX で渡します。</p></div></li><li><span class="sn">03</span><div><h3>署名付きリリース</h3><p>ハッシュが指す成果物に、買い手が確認できる署名を付けます。</p></div></li><li><span class="sn">04</span><div><h3>ビルドの来歴</h3><p>in-toto のステートメントとして記録し、SLSA に沿って整えます。</p></div></li><li><span class="sn">05</span><div><h3>三言語の報告書</h3><p>英語、日本語、繁体字中国語。買い手が、通話なしで追える文章です。</p></div></li><li><span class="sn">06</span><div><h3>次のリリース</h3><p>リテイナーでは、新しいリリースのたびに同じ方法で検証し直します。一度の合格を、次の版へ使い回しません。</p></div></li></ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="tiers" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="idx">05</p>
+          <div>
+            <h2>依頼のかたち</h2>
+            <p class="intro">公表しているのは範囲です。料金表はありません。費用は、ツリーとツールチェーンと、買い手の期限によります。</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <ol class="tiers"><li><span class="sn">01</span><h3>Readiness Scan</h3><p class="gloss">再ビルドできる状態かの確認</p><p>このファームウェアが、そもそもビルドし直せるかの、範囲を限った確認です。ツールチェーンが手に入るか、バイナリブロブ、再現を妨げる非決定性、そして今日のままでは買い手が検証できない主張。販売が、まだ答えていない問いにかかっているときの最初の一歩です。</p></li><li><span class="sn">02</span><h3>Build Assurance Audit</h3><p class="gloss">ビルド保証の一式</p><p>Binary Star の一式です。合意した範囲のソース、独立した二つの再ビルド、SBOM、署名付きリリース、来歴、三言語の報告書。</p></li><li><span class="sn">03</span><h3>Release Retainer</h3><p class="gloss">リリースの継続確認</p><p>その後の各リリースを、同じ方法で検証し直します。出荷のペースが、一度きりの PDF では覆えないチーム向けです。</p></li><li><span class="sn">04</span><h3>Supplier Verification</h3><p class="gloss">供給者の検証</p><p class="tag">日本の買い手向け</p><p>日本の買い手が、供給者のファームウェアに関する主張を、供給者自身のビルド記録に頼らず確認するためのものです。</p></li></ol><p class="section-cta"><a class="btn btn-primary" href="mailto:hello@starconomy.com?subject=Binary%20Star%20%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">料金はお問い合わせください</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proof" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="idx">06</p>
+          <div>
+            <p class="eyebrow">パイロット · 公開されている成果物だけ</p>
+            <h2>実際に実行したこと</h2>
+            <p class="intro">ArduPilot Copter 4.7.3 の CubeOrange 向けイメージを、独立した環境でビルドし直しました。得られたイメージは、ブートローダを含めて公式リリースとビット単位で一致しました。</p>
+            <p class="coming">詳しい記録は、これから公開します。</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <table class="spec"><tbody><tr><th scope="row">対象</th><td>ArduPilot Copter 4.7.3</td></tr><tr><th scope="row">ボードのターゲット</th><td>CubeOrange</td></tr><tr><th scope="row">結果</th><td>公式リリースとビット単位で一致</td></tr><tr><th scope="row">一致の範囲</th><td>ブートローダを含む</td></tr><tr><th scope="row">記録</th><td>これから公開</td></tr><tr><th scope="row">比べたもの</th><td>当社による再ビルド一つと、公開されている公式イメージ</td></tr><tr><th scope="row">案件で行うこと</th><td>顧客のソースを独立した二つの環境でビルドし、買い手に報告書を渡す</td></tr><tr><th scope="row">これではないもの</th><td>顧客案件ではない。認証ではない。推奨ではない。</td></tr></tbody></table>
+          <p class="note">ここから、顧客、提携先、審査の通知書を読み取らないでください。ここに名を挙げたプロジェクトによる承認は主張しません。ArduPilot および Cube は、それぞれの権利者の商標です。再ビルドした成果物を特定するためだけに記載しています。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="idx">07</p>
+          <div>
+            <h2>動かない基準点</h2>
+            <p>星は、航海する者にとって動かない基準です。ほかの位置は、その点から測ります。中国語の社名にある <span lang="zh-Hant">聯</span> は、結びつきです。同じ証拠で確認されることを受け入れる作り手と、その証拠に依ることのできる買い手を指します。</p><p>Binary Star（双星）は、最初のサービスです。範囲は、意図して狭くしています。リリースを再現するか、再現できなかったと述べるか。どちらかです。</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <dl class="facts"><div><dt>法的名称</dt><dd><span class="legal" lang="zh-Hant" translate="no">渼科星聯科技有限公司</span></dd></div><div><dt>英語名称</dt><dd>Starconomy INC.</dd></div><div><dt>所在地</dt><dd>台湾・台北</dd></div><div><dt>最初のサービス</dt><dd>Binary Star（双星）</dd></div></dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap contact-grid">
+        <p class="idx">08</p>
+        <div>
+          <h2>料金はお問い合わせください</h2>
+          <p class="intro">作り手か買い手か、そしてリリースの内容を教えてください。ボード、ファームウェア、販売先の市場です。</p>
+          <p><a class="email" href="mailto:hello@starconomy.com?subject=Binary%20Star%20%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">hello@starconomy.com</a></p>
+          <p class="hero-meta"><span class="legal" lang="zh-Hant" translate="no">渼科星聯科技有限公司</span> <span aria-hidden="true">·</span> 台湾・台北</p>
+          <p class="note">フォームはありません。このアドレスへ、メールがそのまま届きます。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="brand-name">Starconomy</p>
+        <p class="legal-line"><span class="legal" lang="zh-Hant" translate="no">渼科星聯科技有限公司</span></p>
+        <p>Starconomy INC.</p>
+        <p>台湾・台北</p>
+      </div>
+      <nav class="footer-nav" aria-label="このページ">
+        <a href="#problem">課題</a><a href="#why">背景</a><a href="#method">手順</a><a href="#deliverables">成果物</a><a href="#tiers">依頼</a><a href="#proof">実証</a><a href="#about">会社</a><a href="#contact">連絡</a>
+      </nav>
+      <div class="footer-meta">
+        <nav class="lang" aria-label="言語"><a href="../" hreflang="en" lang="en">EN</a><a href="./" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="../zh/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+        <p>© 2026 Starconomy INC.</p>
+        <p>このサイトはクッキーを使わず、第三者のスクリプトを読み込みません。</p>
+        <p>ArduPilot および Cube は、それぞれの権利者の商標です。</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/site.js"></script>
+</body>
+</html>
