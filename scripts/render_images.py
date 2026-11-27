@@ -77,8 +77,8 @@ def icons() -> None:
 def main() -> None:
     IMG.mkdir(parents=True, exist_ok=True)
     og("en", ["Two builds.", "One truth."], "Verifiable by design.", "ibm-plex-sans-500.woff2", 84)
-    og("ja", ["二つのビルド、", "ひとつの真実。"], "検証できる信頼を。", "noto-sans-jp-500.woff2", 64)
-    og("zh", ["兩次建置，", "一個真相。"], "看得見的信任。", "noto-sans-tc-500.woff2", 72)
+    og("ja", ["二つのビルド、", "ひとつの結果。"], "検証できる信頼を。", "noto-sans-jp-500.woff2", 64)
+    og("zh", ["兩次建置，", "結果如一。"], "可驗證的信任。", "noto-sans-tc-500.woff2", 72)
     icons()
 
 

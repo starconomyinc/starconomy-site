@@ -19,14 +19,14 @@ PAGES = {
 
 REQUIRED = {
     "en": ["Two builds.", "One truth.", "Verifiable by design.", "hello@starconomy.com", "渼科星聯科技有限公司", "ArduPilot Copter 4.7.3", "CubeOrange", "Contact for pricing"],
-    "ja": ["二つのビルド、ひとつの真実。", "検証できる信頼を。", "hello@starconomy.com", "渼科星聯科技有限公司", "ArduPilot Copter 4.7.3", "CubeOrange", "料金はお問い合わせください"],
-    "zh": ["兩次建置，一個真相。", "看得見的信任。", "hello@starconomy.com", "渼科星聯科技有限公司", "ArduPilot Copter 4.7.3", "CubeOrange", "報價請來信"],
+    "ja": ["二つのビルド、ひとつの結果。", "検証できる信頼を。", "hello@starconomy.com", "渼科星聯科技有限公司", "ArduPilot Copter 4.7.3", "CubeOrange", "料金はお問い合わせください"],
+    "zh": ["兩次建置，結果如一。", "可驗證的信任。", "hello@starconomy.com", "渼科星聯科技有限公司", "ArduPilot Copter 4.7.3", "CubeOrange", "報價請來信"],
 }
 
 H1 = {
     "en": "Two builds.",
-    "ja": "二つのビルド、ひとつの真実。",
-    "zh": "兩次建置，一個真相。",
+    "ja": "二つのビルド、ひとつの結果。",
+    "zh": "兩次建置，結果如一。",
 }
 
 FORBIDDEN = [
