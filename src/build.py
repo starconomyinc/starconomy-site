@@ -40,7 +40,7 @@ MARK = """<svg class="mark" viewBox="0 0 36 36" aria-hidden="true" focusable="fa
 JSON_LD_DESC = {
     "en": "Firmware assurance. Two independent rebuilds, one hash a buyer can check.",
     "ja": "ファームウェアのビルド検証。独立した二つの再ビルドと、調達側が照合できる一つのハッシュ。",
-    "zh": "韌體建置驗證。兩次獨立重建，一組採購方可核對的雜湊。",
+    "zh": "韌體建置驗證。兩次獨立重建，交出一組採購方可核對的雜湊。",
 }
 
 
@@ -204,20 +204,22 @@ def deliverable_list(items: list[dict]) -> str:
 
 def tiers(page: dict, mail: str) -> str:
     block = page["tiers"]
+    has_gloss = any(item["gloss"] for item in block["items"])
     cards = []
     for index, item in enumerate(block["items"], start=1):
-        gloss = f'<p class="gloss">{esc(item["gloss"])}</p>' if item["gloss"] else ""
         tag = f'<p class="tag">{esc(item["tag"])}</p>' if item["tag"] else ""
+        gloss = f'<p class="gloss">{esc(item["gloss"])}</p>' if has_gloss else ""
         cards.append(
             "<li>"
-            f'<span class="sn">0{index}</span>'
+            f'<div class="tier-kicker"><span class="sn">0{index}</span>{tag}</div>'
             f"<h3>{esc(item['name'])}</h3>"
-            f"{gloss}{tag}"
-            f"<p>{esc(item['text'])}</p>"
+            f"{gloss}"
+            f'<p class="tier-copy">{esc(item["text"])}</p>'
             "</li>"
         )
+    klass = "tiers with-gloss" if has_gloss else "tiers"
     return (
-        '<ol class="tiers">'
+        f'<ol class="{klass}">'
         + "".join(cards)
         + "</ol>"
         + f'<p class="section-cta"><a class="btn btn-primary" href="{esc(mail)}">{esc(block["cta"])}</a></p>'
