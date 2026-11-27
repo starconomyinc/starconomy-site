@@ -117,6 +117,11 @@ body {
 :lang(ja) body,
 :lang(zh-Hant) body { line-height: 1.85; }
 
+:lang(ja) body {
+  line-break: strict;
+  word-break: auto-phrase;
+}
+
 img, svg { max-width: 100%; }
 
 h1, h2, h3, p { margin: 0; }
